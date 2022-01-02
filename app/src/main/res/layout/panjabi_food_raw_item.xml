@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/desc"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="20dp"
+    android:elevation="20dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFFFFF">
+
+
+        <ImageView
+            android:id="@+id/pnimage"
+            android:layout_width="114dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="TODO"
+            android:cropToPadding="false"
+            android:foregroundGravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/manchurian" />
+
+        <TextView
+            android:id="@+id/pnrprice"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginStart="48dp"
+            android:text="₹"
+            android:textColor="#E53935"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pnimage"
+            app:layout_constraintTop_toBottomOf="@+id/pnname"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/pnname"
+            android:layout_width="190dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="serif"
+            android:text="@string/manchurian"
+            android:textColor="#E53935"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/pnimage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pnprice"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="serif"
+            android:text="price"
+            android:textColor="#E53935"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pnrprice"
+            app:layout_constraintStart_toEndOf="@+id/pnrprice"
+            app:layout_constraintTop_toTopOf="@+id/pnrprice"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/pndesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="serif"
+            android:text="TextView"
+            android:textColor="#E53935"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pnimage"
+            app:layout_constraintTop_toBottomOf="@+id/pnprice"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="Description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
